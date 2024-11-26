@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container" id="header-content">
+            <div class="header-content-text">
+                <img src="img/logo.png" class="logo animate__animated animate__backInDown" alt="тут должен быть логотип">
+                <div id="header-text" class="animate__animated  animate__fadeIn animate__delay-1s">
+                    <h3>С помощью нас<br> вы сможете создать то, о чём</h3>
+                    <h1>желаете!</h1>
+                    <p>
+                        Наши возможности + опыт позволят Вам достичь огромного успеха. Мы верим в вас!<br>
+                        И знаем это на все 100%. Вас не остановить!
+                    </p>
+                     <a href="#" class="button animate__animated animate__rotateInUpLeft animate__delay-1s my_animated_border">
+                         Узнать больше...</a>
+                </div>
+
+            </div>
+
+            <div class="header-image animate__animated animate__bounceInRight animate__delay-1s">
+                <img src="img/header-img.png" class="header-phone" alt="а тут должна быть деффка в телефоне">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container" id="main-choices">
+            <div class="question">
+                <h2>Что вам необходимо?</h2>
+            </div>
+            <div class="choices">
+                <div>
+                    <img src="img/f3.png" alt="каранд">
+                    <h4>Первый блок</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                    <img src="img/f4.png">
+                    <h4>Второй блок</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit?</p>
+                </div>
+                <div>
+                    <img src="img/f5.png">
+                    <h4>Третий блок</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
+                </div>
+            </div>
+        </div>
+        <section class="form_order">
+            <div class="container" id="form_order">
+                <h2 style="background: #f7f7f7;">Форма заказа</h2>
+                <div class="sliding-content">
+                    <div class="top-slide">
+                        <form action="#" method="get">
+                            <div class="form-inputs">
+                                <div class="inputs" id="order">
+                                    <label for="name">
+                                        <input style="z-index: 0;" name="name" id="name" placeholder="Имя" class="my_input">
+                                    </label>
+                                    <label for="surname">
+                                        <input name="surname" id="surname" placeholder="Фамилия" class="my_input">
+                                    </label>
+                                    <label for="tel">
+                                        <input name="tel" id="tel" placeholder="89136470121" class="my_input">
+                                    </label>
+                                    <label for="address">
+                                        <input name="address" id="address" placeholder="ул. Пушкина, д. Колотушкина, кв.69, 644077" class="my_input">
+                                    </label>
+                                    <label for="date">
+                                        <input name="date"  id="date" type="date" class="my_input">
+                                    </label>
+                                    <label for="time">
+                                        <input name="time" id="time" type="time" class="my_input">
+                                    </label>
+                                    <label for="email">
+                                        <input name="email" id="email" placeholder="Artem.Dudorov@gmail.com"  class="my_input">
+                                    </label>
+                                    <select name="user_payment" class="my_input">
+                                        <option>Оплата при получении</option>
+                                        <option>Оплата онлайн</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="button">Заказать!</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="bottom-slide" id="form_data">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form_call_back">
+            <div class="container" id="form_call_back">
+                <h2>Форма заказа обратного звонка</h2>
+                <form action="#" method="post">
+                    <div class="form-inputs">
+                        <div class="inputs">
+                            <input name="user_name" placeholder="Имя" type="text" class="my_input"
+                                   minlength="2" maxlength="40" required>
+                            <input name="user_email" placeholder="Artem.Dudorov@gmail.com" type="email" class="my_input"
+                                   pattern="[a-zA-Z0-9]{1,}@[a-zA-Z0-9]{1,}.[a-zA-Z0-9]{1,}" required>
+                            <input name="user_tel" placeholder="89136470121" type="tel" class="my_input"
+                                   pattern="[0-9]{11,}" required>
+                            <input name="user_question" placeholder="Какой вопрос Вас интересует?" type="text" class="my_input"
+                                   minlength="20" maxlength="400" required>
+                        </div>
+                        <button type="submit" class="button">Отправить вопрос!</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            © Все на этом сайте защищено
+        </div>
+    </footer>
+
+    <script src="js/main1.js"></script>
+</body>
+</html>
